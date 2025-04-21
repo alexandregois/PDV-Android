@@ -1,0 +1,93 @@
+.custom-modal {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 888;
+    transition: .7s;
+    &-active {
+        opacity: 1;
+        transition: .7s;
+    }
+    &-background {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        opacity: 1;
+    }
+    &-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 48px;
+        margin-top: 8px;
+        &-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            &-icon {
+                margin-top: -16px;
+                margin-right: 4px;
+                i {
+                    font-size: 28px;
+                    color: $red;
+                }
+            }
+            &-label {
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $red;
+            }
+        }
+    }
+    &-container {
+        background-color: transparent;
+        color: #324b68;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        text-align: left;
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    &-content {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    &-close {
+        margin-top: -10px;
+        i {
+            font-size: 24px;
+        }
+    }
+    &-button {
+        color: #00d2be;
+        cursor: pointer;
+        font-size: 1.25em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: -24px;
+        border: none;
+        background: none;
+        padding: 24px 0;
+        float: right;
+    }
+}

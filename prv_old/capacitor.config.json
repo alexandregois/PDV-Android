@@ -1,0 +1,13 @@
+{
+  "appId": "br.com.paratyrotativo.pdv",
+  "appName": "Paraty Rotativo PDV",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": true,
+      "splashImmersive": true
+    }
+  }
+}
